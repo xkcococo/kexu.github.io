@@ -88,16 +88,10 @@ disqus_shortname: dongyuanwu # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
 
-news_limit: 3
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
