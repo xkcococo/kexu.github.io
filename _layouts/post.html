@@ -18,6 +18,24 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+  
+  
+  <div class="pagination1">
+  {% if page.previous.url %}
+    <span class="prev" >
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+        ← Last post
+      </a>
+    </span>
+  {% endif %}
+  {% if page.next.url %}
+    <span class="next" >
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+        Next post →
+      </a>
+    </span>
+  {% endif %}
+  </div>
 
   {% if site.disqus_shortname and page.comments %}
     <div id="disqus_thread"></div>

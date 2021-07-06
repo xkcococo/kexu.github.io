@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blog
+title: Blog
 pagination:
   enabled: true
   collection: posts
@@ -24,9 +24,8 @@ pagination:
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
-        <p>{{ post.description }}</p>
+        <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp;&nbsp;
+        <span class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</span>
       </li>
     {% endfor %}
   </ul>
