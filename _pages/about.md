@@ -22,7 +22,6 @@ I recieved my MS degree in Biostatistics from Univeristy of Florida in 2020 and 
 <li>Data Science</li>
 <li>Data Visualization</li>
 <li>Machine Learning</li>
-<li>Causal Inference</li>
 <li>Clinical Trials</li>
 <br>
 <p>Here is my <a href="/assets/pdf/CV.pdf" target="_blank">CV</a>. Nice to meet you! :)</p>
