@@ -132,7 +132,7 @@ plugins:
   - jekyll/scholar
   - jekyll-twitter-plugin
   - jemoji
-  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Extras
 github: [metadata]
