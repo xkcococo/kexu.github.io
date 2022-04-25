@@ -1,38 +1,23 @@
 ---
 layout: page
-title: RSBID
-description: Resampling Strategies for Binary Imbalanced Datasets
-img: /assets/img/proj2_cover.jpg
-importance: 1
+title: COVID19FL
+description: Florida's COVID-19 Data Visualization
+img: /assets/img/proj2_cover.png
+importance: 3
 ---
 
-This package contains functions of resampling strategies to make the binary imbalanced datasets be more balanced. It is important for an imbalanced dataset before applying a classification algorithm, for the reason that class imbalance will lead to a bad performance of classifiers. 
+This app aims to provide a visualization of the COVID-19 at Florida. It will update new case line data from <a href="http://www.floridahealth.gov/" target="_blank">Florida DOH</a> every day.
 
-## Installation
+**Website:** This app has been archived. Thanks for supporting!
 
-`RSBID` is available on the <a href="https://github.com/dongyuanwu/RSBID" target="_blank">github</a> now.
+**Developer:** <a href="https://dongyuanwu.github.io" target="_blank">Dongyuan Wu</a>
 
-```{r}
-# install.packages("devtools")
-devtools::install_github("dongyuanwu/RSBID")
-devtools::install_github("dongyuanwu/RSBID", build_vignettes=TRUE)  # If you would like to view the vignettes
-```
+**Code Repo:** <a href="https://github.com/dongyuanwu/COVID19FL" target="_blank">Github</a>
 
-## Available Strategies
+**R Packages:** shiny, shinydashboard, httr, data.table, tidyverse, DT, plotly
 
-`RSBID` contains five strategies now:
+**Data Source:** <a href="https://open-fdoh.hub.arcgis.com/datasets/florida-covid19-case-line-data" target="_blank">Florida Department of Health Open Data</a>
 
-### Over-sampling
-
-- Random Over-Sampling Algorithm (`ROS`)
-- Synthetic Minority Over-sampling TEchnique (`SMOTE`)
-- Synthetic Minority Over-sampling TEchnique-Nominal Continuous (`SMOTE_NC`)
-
-### Under-sampling
-
-- Random Under-Sampling Algorithm (`RUS`)
-- Under-Sampling Based on Clustering Algorithm (`SBC`)
-
-## ShinyApp
-
-We also have an online <a href="https://dongyuanwu.shinyapps.io/RSBID" target="_blank">ShinyApp</a>.
+**Last Update:**
+- 11/10/2020: Add a default rangeslider for the time series plots to adapt to more and more time points.
+- 07/14/2020: First released.
