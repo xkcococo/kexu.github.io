@@ -6,6 +6,8 @@ img: /assets/img/proj2_cover.png
 importance: 3
 ---
 
+![](/assets/img/proj2_cover.png)
+
 This app aims to provide a visualization of the COVID-19 at Florida. It will update new case line data from <a href="http://www.floridahealth.gov/" target="_blank">Florida DOH</a> every day.
 
 **Website:** This app has been archived. Thanks for supporting!

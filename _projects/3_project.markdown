@@ -6,6 +6,8 @@ img: /assets/img/proj3_cover.jpg
 importance: 2
 ---
 
+![](/assets/img/proj3_cover.jpg)
+
 This app aims to provide confidence intervals for relative risk of two correlated proportions.
 
 **Website:** <a href="https://dongyuanwu.shinyapps.io/PairedRR" target="_blank">https://dongyuanwu.shinyapps.io/PairedRR</a>
