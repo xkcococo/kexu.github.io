@@ -1,25 +1,22 @@
 ---
 layout: page
-title: COVID19FL
-description: Florida's COVID-19 Data Visualization
-img: /assets/img/proj2_cover.png
-importance: 3
+title: PairedRR
+description: Confidence Intervals for Paired Relative Risk
+img: /assets/img/proj2_cover.jpg
+importance: 1
 ---
 
-<img src="/assets/img/proj2_cover.png" style="max-width: 100%"/>
+<img src="/assets/img/proj3_cover.jpg" style="max-width: 100%"/>
 
-This app aims to provide a visualization of the COVID-19 at Florida. It will update new case line data from <a href="http://www.floridahealth.gov/" target="_blank">Florida DOH</a> every day.
+This app aims to provide confidence intervals for relative risk of two correlated proportions.
 
-**Website:** This app has been archived. Thanks for supporting!
+**Website:** <a href="https://dongyuanwu.shinyapps.io/PairedRR" target="_blank">https://dongyuanwu.shinyapps.io/PairedRR</a>
 
-**Developer:** <a href="https://dongyuanwu.github.io" target="_blank">Dongyuan Wu</a>
+**Maintainer:** <a href="https://dongyuanwu.github.io" target="_blank">Dongyuan Wu</a>
 
-**Code Repo:** <a href="https://github.com/dongyuanwu/COVID19FL" target="_blank">Github</a>
+**Citation:** COOMING SOON!
 
-**R Packages:** shiny, shinydashboard, httr, data.table, tidyverse, DT, plotly
+**Updates:** 
 
-**Data Source:** <a href="https://open-fdoh.hub.arcgis.com/datasets/florida-covid19-case-line-data" target="_blank">Florida Department of Health Open Data</a>
-
-**Last Update:**
-- 11/10/2020: Add a default rangeslider for the time series plots to adapt to more and more time points.
-- 07/14/2020: First released.
+- 01/31/2022: First released.
+- 03/16/2022: Add a warning message when parts of methods cannot calculate the confidence interval.

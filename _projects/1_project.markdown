@@ -3,7 +3,7 @@ layout: page
 title: RSBID
 description: Resampling Strategies for Binary Imbalanced Datasets
 img: /assets/img/proj1_cover.jpg
-importance: 1
+importance: 2
 ---
 
 <img src="https://raw.githubusercontent.com/dongyuanwu/RSBID/master/fig.jpg" style="max-width: 100%"/>
