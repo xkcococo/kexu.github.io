@@ -6,7 +6,7 @@ img: /assets/img/proj2_cover.jpg
 importance: 1
 ---
 
-<img src="/assets/img/proj3_cover.jpg" style="max-width: 100%"/>
+<img src="/assets/img/proj2_cover.jpg" style="max-width: 100%"/>
 
 This app aims to provide confidence intervals for relative risk of two correlated proportions.
 
