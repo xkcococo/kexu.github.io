@@ -1,2 +1,4 @@
-User-agent: Googlebot-Image
+User-agent: *
 Disallow: /assets/img/personal_pic.jpg
+Disallow: /assets/pdf/CV.pdf
+
