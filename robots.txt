@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /assets/img/personal_pic.jpg
 Disallow: /assets/pdf/CV.pdf
 
+User-agent: Googlebot-Image
+Disallow: /assets/img/personal_pic.jpg
