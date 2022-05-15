@@ -390,10 +390,10 @@ footer.sticky-bottom {
   }
   h2.year {
     color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
     padding-top: 1rem;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
     text-align: right;
   }
   ol.bibliography {
@@ -424,6 +424,7 @@ footer.sticky-bottom {
         }
       }
       .title {
+		font-family: 'Roboto Slab';
 	    font-size: 20px;
         font-weight: bolder;
       }
@@ -437,8 +438,10 @@ footer.sticky-bottom {
         }
         > em {
 		  color: var(--global-theme-color);
+		  font-family: 'Roboto';
 		  font-weight: bolder;
           font-style: normal;
+		  font-weight: 500;
         }
       }
       .links {
