@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Department of Biomedical Informatics</a>. University of Florida.
+subtitle:  <a href='#'>Department of Biostatistics</a> • <a href='#'>Department of Biomedical Informatics</a> • University of Florida.
 
 profile:
   align: right
@@ -18,8 +18,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! My name is Ke Xu, currently a Biostatistician of Department of Biostatistics at @@. I received my first MS degree in [Biostatistics](https://biostat.ufl.edu/) in 2019 and my second MS degree in [Biomedical Informatics](https://hobi.med.ufl.edu/) in 2022 at University of Florida.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on evaluating the association between breastfeeding status with infant health using multi-omics data. I also focus on research that improves the recruitment of peripartum women in clinical research studies.
+
+Here is my [goole scholar](https://scholar.google.com/citations?user=NIW-2ZgAAAAJ&hl=en), [LinkedIn](https://www.linkedin.com/in/ke-xu-967251234/), and my CV.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
