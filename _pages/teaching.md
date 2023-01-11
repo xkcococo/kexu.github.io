@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: page
 title: Teaching Experience
 permalink: /teaching/
 description:
