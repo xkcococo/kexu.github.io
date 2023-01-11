@@ -12,7 +12,7 @@ profile:
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
 Hi! My name is Ke Xu, currently a Biostatistician of Department of Biostatistics at @@. I received my first MS degree in [Biostatistics](https://biostat.ufl.edu/) in 2019 and my second MS degree in [Biomedical Informatics](https://hobi.med.ufl.edu/) in 2022 at University of Florida.

@@ -1,7 +1,7 @@
 ---
-layout: about
+layout: distill
 title: Abstracts and Presentations
-permalink: /
+permalink: /abstracts/
 description: 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Teaching Experience
-permalink: /
+permalink: /teaching/
 description:
 ---
 
