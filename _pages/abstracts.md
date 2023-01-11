@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Abstracts and Presentations
+title: Abstracts
 permalink: /abstracts/
-description:
+description: Abstracts and Presentations
 nav: true
 nav_order: 5
 ---
