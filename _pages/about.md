@@ -1,6 +1,6 @@
 ---
-layout: page
-title: about
+layout: about
+title: About
 permalink: /
 subtitle:  <a href='#'>Department of Biostatistics</a> • <a href='#'>Department of Biomedical Informatics</a> • University of Florida.
 

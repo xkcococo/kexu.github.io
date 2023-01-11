@@ -1,8 +1,8 @@
 ---
-layout: distill
-title: Abstracts and Presentations
+layout: page
+title: Abstracts
 permalink: /abstracts/
-description: 
+description: Abstracts and Presentations
 nav: true
 # nav_order: 2
 ---
