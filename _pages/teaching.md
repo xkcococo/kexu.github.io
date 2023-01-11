@@ -1,9 +1,8 @@
 ---
-layout: page
-permalink: /teaching/
+layout: about
 title: Teaching Experience
+permalink: /
 description:
-nav_order: 5
 ---
 
 • Guest lecture: GMS 6804 - Transnational Bioinformatics, University of Florida, Spring 2022
