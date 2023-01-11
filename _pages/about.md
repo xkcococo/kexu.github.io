@@ -19,7 +19,7 @@ Hi! My name is Ke Xu, currently a Biostatistician of Department of Biostatistics
 
 My research focuses on evaluating the association between breastfeeding status with infant health using multi-omics data. I also focus on research that improves the recruitment of peripartum women in clinical research studies.
 
-Here is my [google scholar](https://scholar.google.com/citations?user=NIW-2ZgAAAAJ&hl=en), [LinkedIn](https://www.linkedin.com/in/ke-xu-967251234/), and my CV.
+Here is my [google scholar](https://scholar.google.com/citations?user=NIW-2ZgAAAAJ&hl=en), [LinkedIn](https://www.linkedin.com/in/ke-xu-967251234/), and my <a href="/assets/pdf/CV.pdf" target="_blank">CV</a>.
  
  
  
