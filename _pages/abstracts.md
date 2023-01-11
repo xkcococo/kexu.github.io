@@ -3,6 +3,8 @@ layout: distill
 title: Abstracts and Presentations
 permalink: /abstracts/
 description: 
+nav: true
+nav_order: 2
 ---
 
 1. Xu K, Hsiao C, Ballard H, et al. (2022) Peripartum women’s perspectives on research study participation in the OneFlorida Clinical Research Consortium. Reproductive and Perinatal Biology Research program trainee festival; November 17th, 2022; Gainesville, FL
