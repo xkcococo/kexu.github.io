@@ -6,7 +6,7 @@ subtitle:  <a href='#'>Department of Biostatistics</a> • <a href='#'>Departmen
 
 profile:
   align: right
-  image: personal_pic.jpg
+  image: Ke_Xu_Photo.jpg
   image_circular: false # crops the image to make it circular
 
 
