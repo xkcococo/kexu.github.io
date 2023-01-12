@@ -7,9 +7,10 @@ tags: [QIIME2, 16S, sequencing, fastq]
 comments: true
 ---
 
-**The latest QIIME 2 tutorials version [2022.11](https://docs.qiime2.org/2022.11/)** Please read the tutorials for any questions. There are lots of different functions and plugins provided by QIIME2. Here I only put the bits and pieces of the codes for different procedures together, then use my own files to run it as an simple example.
+**The latest QIIME 2 tutorials version [2022.11](https://docs.qiime2.org/2022.11/).
+** Please read the tutorials for any questions. There are lots of different functions and plugins provided by QIIME2. Here I only put the bits and pieces of the codes for different procedures together, then use my own files to run it as an simple example.
 
-</br>
+<br>
 **Step 1: Before importing data, first you need to identify the corresponding sequencing file format**
 
 First, we need to compare our sequencing files to the formats listed on [this page](https://docs.qiime2.org/2022.11/tutorials/importing/). 
@@ -29,7 +30,7 @@ qiime tools import  \
 
 Now we have our demultiplexed paired-end sequences output, and ready for trimming adapters.
 
-</br>
+<br>
 **Step 2: Search demultiplexed paired-end sequences for adapters and remove them.**
 
 If adapters were used during PCR procedures, we need to search them in all reads and remove them by Cutadapt. Let's suppose the adapter in all forward sequences is `GACTACCAGGGTATCTAATCCTGTTTGCTCCCC`, and the adapter in all reverse sequences is a `CCTACGGGAGGCAGCAGTGGGGAATATTGCACAAT`.
@@ -46,7 +47,7 @@ qiime cutadapt trim-paired \
 
 Now we have our trimmed sequence data for denoising.
 
-</br>
+<br>
 **Step 3: Denoising trimmed sequence data with DADA2**
 
 Before perform sequence denoising, we need to use [QIIME 2 view](https://view.qiime2.org/) to visualize our trimmed sequence data, then decide our parameters for denoising. This tutorials 
@@ -74,7 +75,7 @@ qiime dada2 denoise-paired \
 
 Now we have our `table-dada2.qza` and `rep-seqs-dada2.qza` for next step.
 
-</br>
+<br>
 **Step 4: Use classifier to generate our taxonomy table**
 
 Here we have two options: 1. [Train your own feature classifier](https://docs.qiime2.org/2022.11/tutorials/feature-classifier/), or 2. Use [pre-traiend feature classifier](https://docs.qiime2.org/2022.11/data-resources/) provided by QIIME 2.
@@ -98,7 +99,7 @@ qiime tools export
 
 Now we have our taxonomy table in tsv format.
 
-</br>
+<br>
 **Step 5: Generate feature table for each sample**
 
 We will use `table-dada2.qza` to generate our feature table.
@@ -114,11 +115,11 @@ biom convert -i exported-feature-table/feature-table.biom -o exported-feature-ta
 biom head -i feature-table.tsv
 ```
 
-</br>
+<br>
 **Step 6: Combine your feature table and taxonomy table**
 
 We have two output files `taxonomy.tsv` and `feature-table.tsv`. We can combine them by sequencing id. 
 
-</br>
+<br>
 **Now you have everything you have. Please feel free to perform your downstream statistical analysis.**
 
