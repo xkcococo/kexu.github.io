@@ -45,7 +45,7 @@ qiime cutadapt trim-paired \
   --verbose
 ```
 
-Now we have our trimmed sequence data for denoising.
+Now we have our trimmed sequence data for next step denoising.
 
 <br>
 **Step 3: Denoising trimmed sequence data with DADA2.**
@@ -73,7 +73,7 @@ qiime dada2 denoise-paired \
   --p-n-threads 24
 ```
 
-Now we have our `table-dada2.qza` and `rep-seqs-dada2.qza` for next step.
+Now we have our `table-dada2.qza` and `rep-seqs-dada2.qza` for generating taxonomy table and feature table.
 
 <br>
 **Step 4: Using classifier to generate our taxonomy table.**
@@ -97,7 +97,7 @@ qiime tools export
   --output-path exported-feature-table
 ```
 
-Now we have our taxonomy table in tsv format.
+Now we have our taxonomy table in `.tsv` format.
 
 <br>
 **Step 5: Generating feature table for each sample.**
@@ -121,5 +121,5 @@ biom head -i feature-table.tsv
 We have two output files `taxonomy.tsv` and `feature-table.tsv`. We can combine them by sequencing id. 
 
 <br>
-**Now you have everything you have. Please feel free to perform your downstream statistical analysis.**
+**Now you have everything you need. Please feel free to perform your downstream statistical analysis:)**
 
