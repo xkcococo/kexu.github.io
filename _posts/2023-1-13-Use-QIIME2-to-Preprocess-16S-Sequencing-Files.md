@@ -7,7 +7,7 @@ tags: [QIIME2, 16S, sequencing, fastq]
 comments: true
 ---
 
-**The latest QIIME 2 tutorials version [2022.11](https://docs.qiime2.org/2022.11/)**
+**The latest QIIME 2 tutorials version [2022.11](https://docs.qiime2.org/2022.11/)** Please read the tutorials for any questions. Here I put the bits and pieces of the codes for different procedures together.
 
 
 **Step 1: Before importing data, first you need to identify the corresponding sequencing file format**
