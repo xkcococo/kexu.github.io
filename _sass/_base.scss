@@ -519,6 +519,7 @@ footer.sticky-bottom {
         }
       }
       .title {
+        font-size: 20px;
         font-weight: bolder;
       }
       .author {
@@ -530,8 +531,10 @@ footer.sticky-bottom {
           }
         }
         > em {
+          color: var(--global-theme-color);
           border-bottom: 1px solid;
           font-style: normal;
+          font-weight: 500;
         }
         > span.more-authors {
           color: var(--global-text-color-light);
