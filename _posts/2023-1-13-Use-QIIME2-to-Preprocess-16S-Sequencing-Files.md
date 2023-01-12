@@ -11,15 +11,15 @@ comments: true
 ** Please read the tutorials for any questions. There are lots of different functions and plugins provided by QIIME2. Here I only put the bits and pieces of the codes for different procedures together, then use my own files to run it as an simple example.
 
 <br>
-**Step 1: Before importing data, first you need to identify the corresponding sequencing file format**
+**Step 1: Importing data in QIIME2.**
 
-First, we need to compare our sequencing files to the formats listed on [this page](https://docs.qiime2.org/2022.11/tutorials/importing/). 
+Before importing data, first you need to identify the corresponding sequencing file format. We can compare our sequencing files to the formats listed on [this page](https://docs.qiime2.org/2022.11/tutorials/importing/). 
 
 Here we will use `Casava 1.8 paired-end demultiplexed fastq` as an example. The format of `Casava 1.8 paired-end demultiplexed fastq` is two `fastq.gz` files for each sample L2S357_15_L001_R1_001.fastq.gz and L2S357_15_L001_R2_001.fastq.gz. The R1 and R2 stand for one forward and one reverse sequencing file. 
 
 The underscore-separated fields in this file name are: `the sample identifier`_`the barcode sequence or a barcode identifier`_`the lane number`_`the direction of the read (i.e. R1 or R2)`_`the set number`.
 
-
+Then, we will run these codes to import our data.
 ```
 qiime tools import  \
   --type 'SampleData[PairedEndSequencesWithQuality]'  \
@@ -31,9 +31,9 @@ qiime tools import  \
 Now we have our demultiplexed paired-end sequences output, and ready for trimming adapters.
 
 <br>
-**Step 2: Search demultiplexed paired-end sequences for adapters and remove them.**
+**Step 2: Searching demultiplexed paired-end sequences for adapters and remove them.**
 
-If adapters were used during PCR procedures, we need to search them in all reads and remove them by Cutadapt. Let's suppose the adapter in all forward sequences is `GACTACCAGGGTATCTAATCCTGTTTGCTCCCC`, and the adapter in all reverse sequences is a `CCTACGGGAGGCAGCAGTGGGGAATATTGCACAAT`.
+If adapters were used during PCR procedures, we need to search them in all reads and remove them by Cutadapt. Let's suppose the adapter in all forward sequences is `GACTACCAGGGTATCTAATCCTGTTTGCTCCCC`, and the adapter in all reverse sequences is `CCTACGGGAGGCAGCAGTGGGGAATATTGCACAAT`.
 
 ```
 qiime cutadapt trim-paired \
@@ -48,7 +48,7 @@ qiime cutadapt trim-paired \
 Now we have our trimmed sequence data for denoising.
 
 <br>
-**Step 3: Denoising trimmed sequence data with DADA2**
+**Step 3: Denoising trimmed sequence data with DADA2.**
 
 Before perform sequence denoising, we need to use [QIIME 2 view](https://view.qiime2.org/) to visualize our trimmed sequence data, then decide our parameters for denoising. This tutorials 
 
@@ -76,7 +76,7 @@ qiime dada2 denoise-paired \
 Now we have our `table-dada2.qza` and `rep-seqs-dada2.qza` for next step.
 
 <br>
-**Step 4: Use classifier to generate our taxonomy table**
+**Step 4: Using classifier to generate our taxonomy table.**
 
 Here we have two options: 1. [Train your own feature classifier](https://docs.qiime2.org/2022.11/tutorials/feature-classifier/), or 2. Use [pre-traiend feature classifier](https://docs.qiime2.org/2022.11/data-resources/) provided by QIIME 2.
 
@@ -100,7 +100,7 @@ qiime tools export
 Now we have our taxonomy table in tsv format.
 
 <br>
-**Step 5: Generate feature table for each sample**
+**Step 5: Generating feature table for each sample.**
 
 We will use `table-dada2.qza` to generate our feature table.
 
@@ -116,7 +116,7 @@ biom head -i feature-table.tsv
 ```
 
 <br>
-**Step 6: Combine your feature table and taxonomy table**
+**Step 6: Combining our feature table and taxonomy table.**
 
 We have two output files `taxonomy.tsv` and `feature-table.tsv`. We can combine them by sequencing id. 
 
