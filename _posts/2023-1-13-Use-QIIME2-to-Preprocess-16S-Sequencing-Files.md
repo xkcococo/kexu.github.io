@@ -9,7 +9,7 @@ comments: true
 
 **The latest QIIME 2 tutorials version [2022.11](https://docs.qiime2.org/2022.11/)** Please read the tutorials for any questions. There are lots of different functions and plugins provided by QIIME2. Here I only put the bits and pieces of the codes for different procedures together, then use my own files to run it as an simple example.
 
-
+</br>
 **Step 1: Before importing data, first you need to identify the corresponding sequencing file format**
 
 First, we need to compare our sequencing files to the formats listed on [this page](https://docs.qiime2.org/2022.11/tutorials/importing/). 
