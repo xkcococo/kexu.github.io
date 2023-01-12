@@ -602,10 +602,14 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        border-left-style: solid;
+		    border-top-style: hidden;
+        border-right-style: hidden;
+        border-bottom-style: hidden;
+		    border-color: var(--global-theme-color);
       }
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        border-color: var(--global-theme-color);
       }
     }
   }
