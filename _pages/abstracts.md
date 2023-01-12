@@ -8,7 +8,7 @@ nav_order: 5
 ---
 
 
-<p><font size=15px>1. <span style="color:steelblue;font-weight:700;font-size:15px">Xu, K</span>, Hsiao C, Ballard H, et al. (2022) Peripartum women’s perspectives on research study participation in the OneFlorida Clinical Research Consortium. Reproductive and Perinatal Biology Research program trainee festival; November 17th, 2022; Gainesville, FL
+<p><font size=2px>1. <span style="color:steelblue;font-weight:700">Xu, K</span>, Hsiao C, Ballard H, et al. (2022) Peripartum women’s perspectives on research study participation in the OneFlorida Clinical Research Consortium. Reproductive and Perinatal Biology Research program trainee festival; November 17th, 2022; Gainesville, FL</p></font>
 2. Wane I, Elias E, <span style="color:steelblue;font-weight:700;font-size:15px">Xu, K</span>, Du X, Bisesi JH, Young HW, Brown K, Bowden JA, Delcher C, Lemas DJ.; (2022). Utilization of Wastewater-Based Epidemiology to Identify Drug Consumption and Predict Health Outcomes Using Electronic Health Records; Poster for Annual Biomedical Research Conference for Minoritized Scientists (ABRCMS); November 9-12, 2022; Anaheim, CA
 3. <span style="color:steelblue;font-weight:700;font-size:15px">Xu, K</span>, Hsiao C, Ballard H, et al. (2022) Peripartum women’s perspectives on research study participation in the OneFlorida Clinical Research Consortium. American Journal of Obstetrics & Gynecology. 2022;226(1): S640-S641.
 4. Louis-Jacques AF, Lemas DJ, <span style="color:steelblue;font-weight:700;font-size:15px">Xu, K</span>, et al. (2022). Maternal gut microbiome during the lactational period. American Journal of Obstetrics & Gynecology. 2022;226(1): S11-S12.
