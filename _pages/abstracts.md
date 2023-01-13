@@ -54,7 +54,7 @@ nav_order: 5
 
 <p><font size=3px>23. Saldivar B, Ahrens A, Sanchez-Padilla D, Culpepper T, <span style="color:steelblue;font-weight:700">Xu, K</span>, et al. (2021). Effects of a Behavioral Lifestyle Intervention on Cardiovascular Risk Factors and Gut Microbiota; Poster for American College of Physicians; March 29 - April 16, 2021; Gainesville, FL.</font></p>
 
-<p><font size=3px>24. Ballard H, Chachad N, Francois M, <span style="color:steelblue;font-weight:700">Xu, K</span>, et al. (2021). Geography Matters: The Impact of Healthcare Access on Maternal Breastfeeding Confidence; Abstract for the University of Florida Fall 2021 Undergraduate Research Symposium; November 3, 2021, </font></p>Gainesville, FL.  
+<p><font size=3px>24. Ballard H, Chachad N, Francois M, <span style="color:steelblue;font-weight:700">Xu, K</span>, et al. (2021). Geography Matters: The Impact of Healthcare Access on Maternal Breastfeeding Confidence; Abstract for the University of Florida Fall 2021 Undergraduate Research Symposium; November 3, 2021, Gainesville, FL.</font></p>
 
 <p><font size=3px>25. Chachad N, Francois M, <span style="color:steelblue;font-weight:700">Xu, K</span>, et al. (2021). The Impact of Maternal Pre-Pregnancy Body Mass Index on Resilience to Perinatal Stress; Abstract for the University of Florida Fall Undergraduate Research Symposium; November 3, 2021. Gainesville, FL.</font></p>
 
