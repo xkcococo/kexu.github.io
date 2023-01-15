@@ -269,6 +269,9 @@ blockquote {
   .contact-note {
     font-size: 0.8rem;
   }
+  .coco-count {
+  font-size: 1rem;
+  }
 }
 
 
@@ -603,10 +606,10 @@ footer.sticky-bottom {
       }
       div.abstract.hidden {
         border-left-style: solid;
-		    border-top-style: hidden;
+        border-top-style: hidden;
         border-right-style: hidden;
         border-bottom-style: hidden;
-		    border-color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
       }
       div.abstract.hidden.open {
         border-color: var(--global-theme-color);
