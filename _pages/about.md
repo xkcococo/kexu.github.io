@@ -6,7 +6,7 @@ subtitle:  <a href='#'>Department of Biostatistics</a> • <a href='#'>Departmen
 
 profile:
   align: right
-  image: KeXu_Photo.jpg
+  image: personal_pic.jpg
   image_circular: false # crops the image to make it circular
 
 
@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! My name is Ke Xu, currently a Biostatistician of Department of Biostatistics at @@. I received my first MS degree in [Biostatistics](https://biostat.ufl.edu/) in 2019 and my second MS degree in [Biomedical Informatics](https://hobi.med.ufl.edu/) in 2022 at University of Florida.
+Hi! My name is Ke Xu. I received my first MS degree in [Biostatistics](https://biostat.ufl.edu/) in 2019 and my second MS degree in [Biomedical Informatics](https://hobi.med.ufl.edu/) in 2022 at University of Florida. I am currently serving as a Biostatistician in the Department of Biostatistics within Vanderbilt University Medical Center.
 
 My research focuses on evaluating the association between breastfeeding status with infant health using multi-omics data such as 16S rRNA gene sequencing and metabolomics data. I also collaborated closely with cancer and cardiovascular disease research when I served as Research Assistant at UF Health Cancer Center. 
 
