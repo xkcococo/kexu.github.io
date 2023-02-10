@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle:  <a href='#'>Department of Biostatistics</a> • <a href='#'>Department of Biomedical Informatics</a> • University of Florida.
+subtitle:  <a href='#'>Biostatistician</a> • <a href='#'>Department of Biostatistics</a> • Vanderbilt University Medical Center.
 
 profile:
   align: right
