@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use QIIME 2 to preprocess 16S microbiome gene sequencing files in fastq.gz fromat
+title: Preprocessing Microbiome Sequences with QIIME 2: A Guide to Importing, Trimming, Denoising, and Classifying 16S Suquencing Data
 date: 2023-1-12
 author: Ke Xu
 tags: [QIIME2, 16S, sequencing, fastq]
@@ -8,18 +8,19 @@ comments: true
 ---
 
 **The latest QIIME 2 tutorials version [2022.11](https://docs.qiime2.org/2022.11/).** 
-Please read the tutorials for any questions. There are lots of different functions and plugins provided by QIIME2. Here I only put the bits and pieces of the codes for different procedures together, then use my own files to run it as an simple example.
+This tutorial is based on the latest version of QIIME 2, 2022.11. Before starting, it's recommended to review the QIIME 2 tutorials to understand the different functions and plugins available.
+
 
 <br>
-**Step 1: Importing data in QIIME2.**
+**Step 1: Importing Data in QIIME2.**
 
-Before importing data, first you need to identify the corresponding sequencing file format. We can compare our sequencing files to the formats listed on [this page](https://docs.qiime2.org/2022.11/tutorials/importing/). 
+Before importing your data, it is important to identify the correct sequencing file format. The format of your sequencing files can be compared to the formats listed on [this page](https://docs.qiime2.org/2022.11/tutorials/importing/). 
 
-Here we will use `Casava 1.8 paired-end demultiplexed fastq` as an example. The format of `Casava 1.8 paired-end demultiplexed fastq` is two `fastq.gz` files for each sample L2S357_15_L001_R1_001.fastq.gz and L2S357_15_L001_R2_001.fastq.gz. The R1 and R2 stand for one forward and one reverse sequencing file. 
+For the purpose of this tutorial, let's use `Casava 1.8 paired-end demultiplexed fastq` as an example. This format consists of two `fastq.gz` files for each sample, with names such as `L2S357_15_L001_R1_001.fastq.gz` and `L2S357_15_L001_R2_001.fastq.gz`. The `R1` and `R2` stand for one forward and one reverse sequencing file, respectively.
 
-The underscore-separated fields in this file name are: `the sample identifier`_`the barcode sequence or a barcode identifier`_`the lane number`_`the direction of the read (i.e. R1 or R2)`_`the set number`.
+The fields in the file name, separated by underscores, are: `sample identifier`,  `barcode sequence or barcode identifier`, `lane number`, `read direction (i.e. R1 or R2)`, and `set number`.
 
-Then, we will run these codes to import our data.
+To import your data, run the following code:
 ```
 qiime tools import  \
   --type 'SampleData[PairedEndSequencesWithQuality]'  \
@@ -28,12 +29,15 @@ qiime tools import  \
   --output-path /path/you/saved/your/output/demux-paired-end_demodata.qza
 ```
 
-Now we have our demultiplexed paired-end sequences output, and ready for trimming adapters.
+This will import your demultiplexed paired-end sequences, ready for adapter trimming.
+
 
 <br>
-**Step 2: Searching demultiplexed paired-end sequences for adapters and remove them.**
+**Step 2: Searching Demultiplexed Paired-end Sequences For Adapters and Remove Them.**
 
-If adapters were used during PCR procedures, we need to search them in all reads and remove them by Cutadapt. Let's suppose the adapter in all forward sequences is `GACTACCAGGGTATCTAATCCTGTTTGCTCCCC`, and the adapter in all reverse sequences is `CCTACGGGAGGCAGCAGTGGGGAATATTGCACAAT`.
+If adapters were used during PCR procedures, they need to be searched for and removed from all reads using Cutadapt. For the purposes of this tutorial, let's suppose the adapter in all forward sequences is `GACTACCAGGGTATCTAATCCTGTTTGCTCCCC`, and the adapter in all reverse sequences is `CCTACGGGAGGCAGCAGTGGGGAATATTGCACAAT`.
+
+To trim the adapters, run the following code:
 
 ```
 qiime cutadapt trim-paired \
@@ -45,12 +49,12 @@ qiime cutadapt trim-paired \
   --verbose
 ```
 
-Now we have our trimmed sequence data for next step denoising.
+Let's move on to the next step of denoising our trimmed sequence data.
 
 <br>
-**Step 3: Denoising trimmed sequence data with DADA2.**
+**Step 3: Sequence Denoising with DADA2.**
 
-Before perform sequence denoising, we need to use [QIIME 2 view](https://view.qiime2.org/) to visualize our trimmed sequence data, then decide our parameters for denoising. This tutorials 
+Before we denoise our sequence data, we need to visualize it using the [QIIME 2 view](https://view.qiime2.org/). This allows us to determine the parameters for denoising. To do this, we will use the following command:
 
 ```
 qiime demux summarize \
@@ -58,7 +62,9 @@ qiime demux summarize \
   --o-visualization trimmed-seq.qzv
 ```
 
-We can drop our trimmed-seq.qzv file to the view window. The parameters of `p-trim-left-f`, `p-trim-left-r`, `p-trunc-len-f`, and `p-trunc-len-r` will be determined by the overall quality of the reads.
+We can then drop the trimmed-seq.qzv file into the view window. The parameters of `p-trim-left-f`, `p-trim-left-r`, `p-trunc-len-f`, and `p-trunc-len-r` will be determined based on the overall quality of the reads.
+
+To perform the denoising, we will use the following command:
 
 ```
 qiime dada2 denoise-paired \
@@ -73,14 +79,15 @@ qiime dada2 denoise-paired \
   --p-n-threads 24
 ```
 
-Now we have our `table-dada2.qza` and `rep-seqs-dada2.qza` for generating taxonomy table and feature table.
+With this command, we have generated `table-dada2.qza` and `rep-seqs-dada2.qza` for creating the taxonomy table and feature table.
 
 <br>
-**Step 4: Using classifier to generate our taxonomy table.**
+**Step 4: Generating the Taxonomy Table.**
 
-Here we have two options: 1. [Train your own feature classifier](https://docs.qiime2.org/2022.11/tutorials/feature-classifier/), or 2. Use [pre-traiend feature classifier](https://docs.qiime2.org/2022.11/data-resources/) provided by QIIME 2.
+There are two options for generating the taxonomy table: 
+1. [Train your own feature classifier](https://docs.qiime2.org/2022.11/tutorials/feature-classifier/), or 2. Use a [pre-traiend feature classifier](https://docs.qiime2.org/2022.11/data-resources/) provided by QIIME 2.
 
-Here we used pre-trained classifier Silva 138 99% OTUs full-length sequences.
+In this tutorial, we will use the pre-trained classifier "Silva 138 99% OTUs full-length sequences."
 
 ```
 #download classifier
@@ -97,12 +104,12 @@ qiime tools export
   --output-path exported-feature-table
 ```
 
-Now we have our taxonomy table in `.tsv` format.
+With this, we have generated the taxonomy table in `.tsv` format.
 
 <br>
-**Step 5: Generating feature table for each sample.**
+**Step 5: Generating Feature Table for Each Sample.**
 
-We will use `table-dada2.qza` to generate our feature table.
+In this step, we will use `table-dada2.qza` to generate our feature table.
 
 ```
 #Creating a TSV BIOM table
@@ -116,10 +123,10 @@ biom head -i feature-table.tsv
 ```
 
 <br>
-**Step 6: Combining our feature table and taxonomy table.**
+**Step 6: Combining the Feature Table and Taxonomy Table.**
 
-We have two output files `taxonomy.tsv` and `feature-table.tsv`. We can combine them by sequencing id. 
+At this point, you should have two output files: `taxonomy.tsv` and `feature-table.tsv`. These two tables can be combined by using the sequencing id as the key.
 
 <br>
-**Now you have everything you need. Please feel free to perform your downstream statistical analysis:)**
+**You're all set! You now have everything you need to perform your downstream statistical analysis. Enjoy!**
 
