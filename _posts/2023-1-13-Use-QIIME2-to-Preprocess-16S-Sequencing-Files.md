@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preprocessing Microbiome Sequences with QIIME 2: A Guide to Importing, Trimming, Denoising, and Classifying 16S Suquencing Data
+title: Preprocessing Microbiome Sequences with QIIME 2 - A Guide to Importing, Trimming, Denoising, and Classifying 16S Suquencing Data
 date: 2023-1-12
 author: Ke Xu
 tags: [QIIME2, 16S, sequencing, fastq]
