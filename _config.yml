@@ -142,7 +142,7 @@ disqus_shortname: kexu # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
-# If you have blog posts published on medium.com or other exteranl sources,
+# If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 #external_sources:
 #  - name: medium.com
@@ -212,7 +212,7 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
-      path: "assets/**/*.*"
+      path: "assets"
     values:
       sitemap: false
 
@@ -271,7 +271,7 @@ scholar:
 
   query: "@*"
 
-badges: # Display different badges for your pulications
+badges: # Display different badges for your publications
   altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
   dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
 
@@ -300,7 +300,7 @@ external_links:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: false # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 600
     - 1200
@@ -332,7 +332,7 @@ enable_google_analytics:    true  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arangement
+enable_masonry:             true   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
